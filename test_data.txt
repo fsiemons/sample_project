@@ -1,4 +1,4 @@
-What is your name;Rudi Router
-What is your age;12
-Why;Because
-W?;B!!
+2;4;6
+-2;-6;-6
+2;-4;-2
+0;0;0
