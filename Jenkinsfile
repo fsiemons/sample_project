@@ -10,5 +10,10 @@ pipeline{
                 '''
             }
         }
+        stage('Publish test results'){
+            steps{
+                junit 'test-reports/app_test.xml'
+            }
+        }
     }
 }
