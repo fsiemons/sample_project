@@ -28,9 +28,7 @@ class TestAppOutput(unittest.TestCase):
                 first = first_nums.iloc[index]
                 second = second_nums.iloc[index]
                 expected_sum = expected_sums.iloc[index]
-                print(f"f {first}, s {second}")
                 result = self.run_app(first, second)
-                print(f" the result is: {result}")
 
                 self.assertEqual(expected_sum, float(result.stdout.strip()))
 
