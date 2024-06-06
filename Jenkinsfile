@@ -5,7 +5,7 @@ pipeline{
         stage('Test'){
             steps{
                 sh '''
-                . /shared_data/python_env/pytest_env/bin/activate
+                source /shared_data/python_env/pytest_venv/bin/activate
                 pytest --version
                 python3 test.py
                 '''
