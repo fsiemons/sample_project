@@ -2,14 +2,13 @@ pipeline{
     agent any
 
     stages{
-//        stage('Checkout'){
-//            steps{
-//                git 'https://github.com/fsiemons/sample_project.git'
-//            }
-//        }
         stage('Test'){
             steps{
-                sh 'python3 test.py'
+                sh '''
+                . /shared_data/python_env/pytest_env/bin/activate
+                pytest --version
+                python3 test.py
+                '''
             }
         }
     }
