@@ -10,11 +10,6 @@ pipeline{
                 '''
             }
         }
-        stage('Publish test results'){
-            steps{
-                
-            }
-        }
     }
     post{
         always{
