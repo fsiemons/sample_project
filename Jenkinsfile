@@ -13,7 +13,7 @@ pipeline{
     }
     post{
         always{
-            junit 'test-reports/app_test.xml'
+            junit skipPublishingChecks: true, testResults: 'test-reports/app_test.xml'
         }
     }
 }
